@@ -1,0 +1,65 @@
+@charset "UtF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #152235 url('../img/extrela.svg');
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 15%;
+  height: 30%;
+  border-radius: 50%;
+  background: red;
+  display: flex;align-items: center;
+  justify-content: center;
+}
+
+.bol {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  animation: bol 12s linear infinite;
+}
+.terra {
+  width: 30%;
+  border: solid 40px #33333347;
+  box-shadow: 0px 0px 0px 30px #afa5a53b;
+  border-radius: 50%;
+}
+.bol img {
+  width: 30%;
+}
+@keyframes bol {
+  to {
+    transform: rotateZ(360deg);
+  }
+} 
+
+
+cite {
+  font-family: "IBM Plex Mono";
+  color: white;
+}
+
+.text {
+  margin-left: 3px;
+  align-self: flex-start;
+}
+.text__author {
+  margin-top: 5px;
+  color: white;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+}
